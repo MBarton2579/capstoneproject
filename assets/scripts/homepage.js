@@ -1,9 +1,9 @@
 let searchButton = document.querySelector('.searchButton');
 let closeButton = document.querySelector('.closeButton');
 let searchBox = document.querySelector('.searchBox');
-let menuButton = document.querySelector('.menuButton')
-let navigation = document.querySelector('.navigation')
-let header = document.querySelector('header')
+let menuButton = document.querySelector('.menuButton');
+let navigation = document.querySelector('.navigation');
+let header = document.querySelector('header');
 
 searchButton.onclick = function(){
     searchBox.classList.add('active');

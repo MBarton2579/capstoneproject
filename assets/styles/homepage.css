@@ -147,6 +147,53 @@ ul li:hover ul.dropdown {
     display: block;
 }
 
+#content {
+    margin: 100px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    color: #dee1e2;
+    font-size: 2rem;
+}
+
+#welcome {
+    padding: 20px;
+    background-color: rgba(0, 0, 0);
+    grid-column: 1/13;
+    grid-row: 1/2;
+}
+
+#main {
+    padding: 20px;
+    background-color: rgba(0, 0, 0);
+    grid-column: 4/13;
+    grid-row: 2/4;
+}
+
+#quick-links {
+    padding: 20px;
+    background-color: rgba(0, 0, 0);
+    grid-column: 1/4;
+    grid-row: 2/4;
+}
+
+#quick-links ul{
+    list-style: none;
+}
+
+#quick-links ul li a {
+    text-decoration: none;
+    
+}
+
+footer.primary {
+    padding: 20px;
+    background-color: rgba(0, 0, 0);
+    grid-column: 1/13;
+    grid-row: 4/5;
+}
+
 @media(max-width: 800px){
     .searchButton {
         left: 0;
