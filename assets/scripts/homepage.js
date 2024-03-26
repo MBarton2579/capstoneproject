@@ -3,7 +3,7 @@ let closeButton = document.querySelector('.closeButton');
 let searchBox = document.querySelector('.searchBox');
 let menuButton = document.querySelector('.menuButton');
 let navigation = document.querySelector('.navigation');
-let header = document.querySelector('header');
+let header = document.querySelector('header.primary');
 
 searchButton.onclick = function(){
     searchBox.classList.add('active');

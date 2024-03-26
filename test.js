@@ -8,7 +8,7 @@ fetch('https://dummyjson.com/products')
         return res.json();
     })
     .then(data => {
-        console.log(data.products[1].title);
+        console.log(data.products[1].thumbnail);
     })
     .catch(error => {
         console.log(error);
