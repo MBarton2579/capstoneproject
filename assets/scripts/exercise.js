@@ -1,9 +1,10 @@
+/*menu behavior*/
 let searchButton = document.querySelector('.searchButton');
 let closeButton = document.querySelector('.closeButton');
 let searchBox = document.querySelector('.searchBox');
 let menuButton = document.querySelector('.menuButton')
 let navigation = document.querySelector('.navigation')
-let header = document.querySelector('header')
+let header = document.querySelector('header.primary')
 
 searchButton.onclick = function(){
     searchBox.classList.add('active');
@@ -26,3 +27,36 @@ menuButton.onclick = function(){
     closeButton.classList.remove('active');
     searchButton.classList.remove('active');
 }
+/*menu behavior end*/
+
+/*API behavior*/
+fetch("https://dummyjson.com/products")
+.then(res => {
+    const data = res.products;
+    let rows = '';
+    data.forEach(product => {
+        rows += <div>
+            <div>
+                
+            </div>
+        </div>
+    })
+})
+.catch(error => console.log(error));
+
+/*fetch('https://dummyjson.com/products')
+    .then(res => {
+        if(!res.ok) {
+            console.log('problem');
+            return;
+        }
+            
+        return res.json();
+    })
+    .then(data => {
+        console.log(data.products);
+    })
+    .catch(error => {
+        console.log(error);
+    });*/
+/*API behavior end*/

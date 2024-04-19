@@ -8,8 +8,24 @@ fetch('https://dummyjson.com/products')
         return res.json();
     })
     .then(data => {
-        console.log(data.products[1].thumbnail);
+        console.log(data.products);
     })
     .catch(error => {
         console.log(error);
     });
+
+/*fetch('https://dummyjson.com/products')
+    .then(res => {
+        if(!res.ok) {
+            console.log('problem');
+            return;
+        }
+            
+        return res.json();
+    })
+    .then(data => {
+        console.log(data.products[1].thumbnail);
+    })
+    .catch(error => {
+        console.log(error);
+    });*/
